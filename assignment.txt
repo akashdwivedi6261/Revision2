@@ -1,0 +1,80 @@
+Q1. Explain briefly what happens when you hit a url? explain DNS lookup
+
+Ans. ->1You type a URL in your browser and press Enter.
+       2.Browser looks up IP address for the domain.
+       3.Browser initiates TCP connection with the server.
+       4.Browser sends the HTTP request to the server.
+       5.Server processes request and sends back a response.
+       6.Browser renders the content.
+
+Q2. What is a URLs full form? Explain what a url is and the four parts it consists of The protocol in use The hostname of the server The location of the file The arguments to the file?
+
+Ans. -> URL stands for Uniform Resource Locator. A URL is nothing more than the address of a given unique resource on the Web. 
+       each valid URL points to a unique resource. Such resources can be an HTML page, a CSS document, an image, etc. 
+
+parts: 1) scheme -> The first part of the URL is the scheme, which indicates the protocol that the browser must use to request the resource. 
+                    Usually for websites the protocol is HTTPS or HTTP. A protocol is a set method for exchanging or transferring data around a computer network
+      
+       2) Domain name -> The domain indicates which Web server is being requested. Usually this is a domain name, but an IP address may also be used.
+       
+       3) Path to resource -> A path represent a physical file location on the Web server.
+
+       4) Parameters -> parameters are a list of key/value pairs separated with the & symbol. The Web server can use those parameters to do extra stuff before returning the resource.
+      eg: http://www.facebook.com/dashboard/profile?name="Akash"  
+      http -> scheme, www.facebook.com -> domain name, dashboard/profile -> path, name="Akash" -> Parameters 
+
+Q3. What is HTTP protocol?
+
+ans -> HTTP is a protocol for fetching resources such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser. A complete document is reconstructed from the different sub-documents fetched, for instance, text, layout description, images, videos, scripts, and more.
+
+Q4. What is TCP Protocol?
+
+ans -> TCP stands for Transmission Control Protocol a communications standard that enables application programs and computing devices to exchange messages over a network. It is designed to send packets across the internet and ensure the successful delivery of data and messages over networks.
+
+Q5. 1) GET
+    The GET method is used to retrieve information from the given server using a given URI. Requests using GET should only retrieve data
+     and should have no other effect on the data.
+
+    2)HEAD
+     Same as GET, but transfers the status line and header section only.
+    
+    3) 	POST
+       A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+    
+    4) PUT
+       Replaces all current representations of the target resource with the uploaded content.
+
+    5) DELETE
+      Removes all current representations of the target resource given by a URI.
+   
+    6) CONNECT
+       Establishes a tunnel to the server identified by a given URI.
+    
+    7) 	OPTIONS
+        Describes the communication options for the target resource.
+   
+    8) 	TRACE
+        Performs a message loop-back test along the path to the target resource.
+
+Q6. What are HTTP headers?
+ 
+ans -> HTTP headers let the client and the server pass additional information with an HTTP request or response. An HTTP header consists of       its case-insensitive name followed by a colon (:), then by its value. Whitespace before the value is ignored.
+
+Q7. What are some HTTP response codes? what does it mean? 2xx, 3xx, 4xx, 5xx
+
+ans -> 2xx successful – the request was successfully received, understood, and accepted
+       3xx redirection – further action needs to be taken in order to complete the request
+       4xx client error – the request contains bad syntax or cannot be fulfilled
+       5xx server error – the server failed to fulfil an apparently valid request
+
+Q8. What does cache control on http response mean?
+
+ans -> Cache-control is an HTTP header used to specify browser caching policies in both client requests and server responses. Policies include how a resource is cached, where it's cached and its maximum age before expiring
+
+Q9.What is polling?
+ ans -> Poll the network to retrieve information from network devices that you can use to monitor the behavior of the devices
+
+Q.10 What is long polling?
+
+ans -> Long polling is a version of traditional polling that allows the server to send data to a client whenever available.
+       
